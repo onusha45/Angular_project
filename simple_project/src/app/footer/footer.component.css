@@ -1,0 +1,12 @@
+.footer-section {
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    gap: 20px; /* Adds spacing between cards */
+    justify-content: center; /* Centers the cards */
+    padding: 20px; /* Adds some spacing */
+}
+
+.card {
+    flex: 1; /* Allows cards to shrink and grow */
+    max-width: 18rem; /* Keeps max width */
+}
