@@ -15,8 +15,11 @@ export class FooterComponent {
 {CourseID:2,CourseName:"Dotnet",CourseDuration:"5months",Price:"30000",status:false},
 {CourseID:3,CourseName:"Java",CourseDuration:"6months",Price:"35000",status:true},
 {CourseID:4,CourseName:"Python",CourseDuration:"2months",Price:"20000",status:true},
-    {CourseID:5,CourseName:"React",CourseDuration:"4months",Price:"15000",status:false}
+{CourseID:5,CourseName:"React",CourseDuration:"4months",Price:"15000",status:false},
+{CourseID:6,CourseName:"Vue.js",CourseDuration:"3months",Price:"12000",status:true},
+{CourseID:7,CourseName:"Tailwind",CourseDuration:"1months",Price:"16000",status:false}
   ];
+  
  enableDisable(){
   this.isVisible = !this.isVisible;
  }

@@ -9,12 +9,13 @@
     <input type="password" [(ngModel)] ="password" name="password" class="form-control" id="exampleInputPassword1">
     <p>{{password_text}}</p>
   </div>
+  <button type="submit" class="btn btn-primary" (click)="submitAlert('Your form is Submitted sucessfully with \n email : '+ email +'\n Password:' + password )">Submit</button>
+
 </form>
   <div class="mb-3 form-check" (click)="displayOnUncheck()">
     <input type="checkbox"  class="form-check-input"  id="exampleCheck1 ">
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary" (click)="submitAlert('Your form is Submitted sucessfully with \n email : '+ email +'\n Password:' + password )">Submit</button>
-
+ 
 
 <p> Email you enter is {{email}}</p>
