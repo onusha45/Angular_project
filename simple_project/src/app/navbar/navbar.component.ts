@@ -11,5 +11,5 @@ import { FormsModule } from '@angular/forms';
 export class NavbarComponent {
 
 
-dropdown : string[]= ['Dropdown 1st element','Dropdown 2nd element','Dropdown 3rd element','Dropdown 4th element','Dropdown 5th element']
+dropdown : string[]= ['Angular','React','Typescript','Django','Dotnet','C programming','Next js']
 }
