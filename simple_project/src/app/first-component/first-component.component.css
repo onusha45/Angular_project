@@ -17,9 +17,9 @@
     align-items: center;
     justify-content: center;
 }
-.div-1{
+/* .div-1{
     background-color: blue;
-}
+} */
 .div-2{
     background-color: rgb(247, 0, 255);
 }
@@ -41,12 +41,17 @@
 .toggle{
     margin: 1em;
     background-color: brown;
-    
+    margin-top: 1em;
 }
 .number{
+    margin-top: 1em;
     width: 100px;
 }
 .checkbox{
     margin-right: 2em;
+    margin-top: 1em;
+}
+.check{
+ margin-right: 2em;
 }
 

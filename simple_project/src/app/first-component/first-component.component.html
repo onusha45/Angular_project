@@ -22,38 +22,38 @@
 
 <div class="division">
   <div>
-  <div class="div-1">
+  <div class="div-1" [ngClass]="bgdiv1color">
     <p>This is division 1</p>
   </div>
 
-  <button class="btn-red">Red</button>
+  <button class="btn-red" (click)="changebgcolorRed()">Red</button>
 
 
-  <button class="btn-blue">Blue</button>
+  <button class="btn-blue" (click)="changebgcolourBlue()">Blue</button>
 
   </div>
   <div>
-  <div class="div-2">
+  <div class="div-2" [ngClass]="isDiv2Active == true ? 'bg-success' :'bg-warning' ">
     <p>This is division 2</p>
   </div>
-  <button class="toggle">Toggle</button>
+  <button class="toggle" (click)="toggle()">Toggle</button>
   </div>
   <div>
-  <div class="div-3">
+  <div class="div-3" [ngClass]="num1 == num2 ? 'bg-primary':'bg-danger'">
     <p>This is division 3</p>
   </div>
   <div class="number">
 
-  <input type="text" name="" value="num1" id="">
-  <input type="text" name="" id="" value="num2">
+  <input type="text" [(ngModel)]="num1" name="num1" placeholder="num1" id="">
+  <input type="text" [(ngModel)]="num2" name="num2" id="" placeholder="num2">
 </div>
  </div>
  <div>
-  <div class="div-4">
+  <div class="div-4" [ngClass]="check == true? 'bg-primary':''">
     <p>This is division 4</p>
   </div>
-  <div>
-  <input type="checkbox" name="" id="" class="checkbox">
+  <div class="checkbox" (click)="displayOncheck1()">
+  <input type="checkbox" name="" id="" class="check">
   <select name="" id="">Country
     <option value="nepal">NEPAL</option>
     <option value="india">INDIA</option>

@@ -13,6 +13,11 @@ export class FirstComponentComponent {
   password: string =""
   password_text : string ="Password must be of 8 digits "
   checkBox: boolean = false;
+  check: boolean = true;
+  bgdiv1color :string = "";
+  isDiv2Active :boolean = true;
+  num1 :string ="";
+  num2 :string ="";
 
 constructor(){
 
@@ -23,5 +28,18 @@ submitAlert(message :string){
 
 displayOnUncheck(){
   this.checkBox = !this.checkBox;
+
+}
+displayOncheck1(){
+  this.check = !this.check;
+}
+changebgcolourBlue(){
+  this.bgdiv1color = "bg-primary";
+}
+changebgcolorRed(){
+  this.bgdiv1color ="bg-danger";
+}
+toggle(){
+  this.isDiv2Active = !this.isDiv2Active
 }
 }
